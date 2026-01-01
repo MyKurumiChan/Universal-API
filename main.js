@@ -25,8 +25,8 @@ export default async function handler(req, res) {
       return res.json(await handleTikTok(url));
     }
 
-    if (platform === "instagram") {
-      return res.json(await handleInstagram(url));
+    if (platform === "twitter") {
+      return res.json(await handleTwitter(url));
     }
 
     if (platform === "pinterest") {
